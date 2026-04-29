@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site, serviceFamilies } from '../data/siteData.js';
+---
+<BaseLayout title={site.title + ' | Frederick, MD'} description={site.sub} canonicalPath="/">
+  <section class="hero">
+    <img src="/images/hero.png" alt={site.hero} />
+    <div class="hero-copy"><p class="eyebrow">Frederick, Maryland</p><h1>{site.hero}</h1><p>{site.sub}</p><a href="/contact/" class="btn">Request a Local Estimate</a></div>
+  </section>
+  <section class="proof">{site.proof.map((item) => <div><span></span>{item}</div>)}</section>
+  <section class="section"><h2>Service families</h2><div class="cards">{serviceFamilies.map((family) => <a class="card" href={`/services/${family.slug}/`}><h3>{family.name}</h3><p>{family.shortDescription}</p></a>)}</div></section>
+  <section class="section split"><div><h2>Built for Frederick properties</h2><p>{site.business} serves homeowners, property managers, and small commercial properties across Frederick County with careful scoping, clean communication, and service plans matched to local conditions.</p><p>Every page on this site is organized around a real service need, so you can move from research to a confident conversation quickly.</p></div><aside class="panel"><h3>Service area</h3>{site.serviceArea.map((area) => <p>{area}</p>)}</aside></section>
+</BaseLayout>

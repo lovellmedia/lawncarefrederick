@@ -1,0 +1,18 @@
+---
+import { site, serviceFamilies } from '../data/siteData.js';
+const phone = site.phone.replace(/\D/g, '');
+---
+<header class="site-header">
+  <a class="brand" href="/"><span>{site.business}</span><small>Frederick, MD</small></a>
+  <nav aria-label="Primary navigation">
+    <a href="/services/">Services</a>
+    <a href="/resources/">Resources</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <a class="phone" href={`tel:${phone}`}>{site.phone}</a>
+</header>
+<div class="service-strip">
+  {serviceFamilies.map((family) => <a href={`/services/${family.slug}/`}>{family.name}</a>)}
+</div>
