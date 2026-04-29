@@ -18,6 +18,11 @@ export const site = {
     "Property-specific recommendations, not one-size-fits-all"
   ],
   "homeClose": "Want A Lawn Plan That Actually Stays On Track?",
+  "homeVisualTitle": "Good Lawn Care Is A System, Not A Random Visit",
+  "homeVisualBody": "A strong lawn needs the right mowing rhythm, clean edges, healthy turf, and seasonal timing. Miss one piece for too long and the whole property starts to look neglected.",
+  "homeResultTitle": "Cleaner Edges. Healthier Turf. Better Curb Appeal.",
+  "homeResultBody": "The goal is a lawn that looks maintained from the street and holds up through Frederick weather. We build the plan around the property instead of guessing.",
+  "homeFinalBody": "Tell us what your lawn looks like now and what you want it to become. We will map the service rhythm, priorities, and next step.",
   "accent": "#4f8f45",
   "dark": "#101812",
   "light": "#edf6e8",
