@@ -24,67 +24,67 @@ const phone = site.phone.replace(/\D/g, '');
 
   <section class="section conversion-intro">
     <div class="intro-copy">
-      <p class="eyebrow dark">Local service page</p>
-      <h2>{child.name}: a clear plan, not a wall of guesses</h2>
+      <p class="eyebrow dark">Local Service Page</p>
+      <h2>{child.name}: Clear Answers. Clean Work. No Guesswork.</h2>
       <p class="lede">{lead}</p>
     </div>
     <aside class="estimate-card">
-      <h3>Start with a focused local review</h3>
+      <h3>Start With A Focused Local Review</h3>
       <ul>
         <li>Property type and access</li>
         <li>Visible concern or goal</li>
         <li>Timing, season, or urgency</li>
         <li>Photos if available</li>
       </ul>
-      <a href="/contact/" class="btn">Get the next step</a>
+      <a href="/contact/" class="btn">Get The Next Step</a>
     </aside>
   </section>
 
   <section class="section modular-grid">
     <article class="feature-block wide">
-      <h2>Why this service is different in Frederick</h2>
+      <h2>Why This Service Is Different In Frederick</h2>
       <p>{context}</p>
       <p>{local}</p>
     </article>
     <div class="feature-block">
-      <h3>Signals this service fits</h3>
+      <h3>When To Call</h3>
       <ul class="check-list">{child.symptoms.map((item) => <li>{item}</li>)}</ul>
     </div>
     <div class="feature-block accent">
-      <h3>Expected outcomes</h3>
+      <h3>What You Get</h3>
       <ul class="check-list">{child.benefits.map((item) => <li>{item}</li>)}</ul>
     </div>
   </section>
 
   <section class="section process-band">
-    <div class="section-kicker">How the work moves</div>
-    <h2>Our {child.name.toLowerCase()} process</h2>
+    <div class="section-kicker">How The Work Moves</div>
+    <h2>Our {child.name} Process</h2>
     <div class="steps enhanced">{child.process.map((step, i) => <div><span>{i + 1}</span><h3>{['Review','Scope','Execute','Wrap'][i] || 'Finish'}</h3><p>{step}</p></div>)}</div>
   </section>
 
   <section class="section content-modules">
-    <div class="module-card"><h2>Planning before pricing</h2><p>{planning}</p><p>{inspection}</p></div>
-    <div class="module-card tinted"><h2>What shapes the estimate</h2><p>{cost}</p><p>{estimate}</p></div>
-    <div class="module-card"><h2>Timing and property use</h2><p>{timing}</p><p>{communication}</p></div>
-    <div class="module-card dark-card"><h2>What makes the result last</h2><p>{outcome}</p><p>{quality}</p></div>
+    <div class="module-card"><h2>Plan First. Price Second.</h2><p>{planning}</p><p>{inspection}</p></div>
+    <div class="module-card tinted"><h2>What Shapes The Estimate</h2><p>{cost}</p><p>{estimate}</p></div>
+    <div class="module-card"><h2>Timing, Access, And Property Use</h2><p>{timing}</p><p>{communication}</p></div>
+    <div class="module-card dark-card"><h2>Built To Make The Result Last</h2><p>{outcome}</p><p>{quality}</p></div>
   </section>
 
   <section class="conversion-strip">
     <div>
-      <p class="eyebrow">Frederick service planning</p>
-      <h2>Need a fast answer on {child.name.toLowerCase()}?</h2>
+      <p class="eyebrow">Frederick Service Planning</p>
+      <h2>Need A Fast Answer On {child.name}?</h2>
       <p>{priorities}</p>
     </div>
-    <a href="/contact/" class="btn light">Request service</a>
+    <a href="/contact/" class="btn light">Request Service</a>
   </section>
 
   <section class="section split">
     <article class="article-card">
-      <h2>How to compare providers</h2>
+      <h2>How To Compare Providers</h2>
       <p>{comparison}</p>
     </article>
     <aside class="panel sidebar-list">
-      <h3>Good estimates should clarify</h3>
+      <h3>Good Estimates Should Clarify</h3>
       <ul>
         <li>What is included and excluded</li>
         <li>How access or season affects timing</li>
@@ -95,12 +95,12 @@ const phone = site.phone.replace(/\D/g, '');
   </section>
 
   <section class="section muted">
-    <h2>Questions about {child.name.toLowerCase()}</h2>
+    <h2>Questions About {child.name}</h2>
     <div class="faq-grid">{child.faqs.map((faq) => <details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div>
   </section>
 
   <section class="section">
-    <h2>Related {parent.name.toLowerCase()} services</h2>
+    <h2>Related {parent.name} Services</h2>
     <div class="cards small">{siblingServices.slice(0, 4).map((sibling) => <a class="card" href={`/services/${parent.slug}/${sibling.slug}/`}><h3>{sibling.name}</h3><p>{sibling.summary}</p></a>)}</div>
   </section>
 </BaseLayout>
