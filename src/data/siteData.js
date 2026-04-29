@@ -6,7 +6,7 @@ export const site = {
   "phone": "(240) 555-0164",
   "email": "service@lawncarefrederick.com",
   "category": "Lawn care service",
-  "hero": "Cinematic Lawn Care for Frederick Curb Appeal",
+  "hero": "Lawn Care in Frederick",
   "sub": "Mowing, turf programs, seasonal cleanups, aeration, edging, and maintenance plans built for Frederick lawns and Maryland seasons.",
   "accent": "#4f8f45",
   "dark": "#101812",
