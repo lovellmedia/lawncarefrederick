@@ -7,7 +7,17 @@ export const site = {
   "email": "service@lawncarefrederick.com",
   "category": "Lawn care service",
   "hero": "Lawn Care in Frederick",
-  "sub": "Mowing, turf programs, seasonal cleanups, aeration, edging, and maintenance plans built for Frederick lawns and Maryland seasons.",
+  "sub": "Get a healthier, cleaner lawn without chasing crews, guessing the plan, or wasting money on random treatments.",
+  "homeLead": "Your Lawn Should Look Cared For Every Week, Not Just Some Weeks",
+  "homePain": "When mowing is inconsistent, weeds spread, or turf gets thin, your curb appeal drops fast and the fix gets more expensive.",
+  "homePromise": "You get reliable service, seasonal strategy, and clear next steps that keep your lawn improving month after month.",
+  "homeBullets": [
+    "Consistent route scheduling you can count on",
+    "Programs matched to turf condition and season",
+    "Simple communication and clear service notes",
+    "Property-specific recommendations, not one-size-fits-all"
+  ],
+  "homeClose": "Want A Lawn Plan That Actually Stays On Track?",
   "accent": "#4f8f45",
   "dark": "#101812",
   "light": "#edf6e8",
